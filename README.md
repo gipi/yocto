@@ -9,7 +9,7 @@ docker in this repo:
 
 ```
 $ cd docker && docker build -t gp/yocto . && cd -
-$ docker run -it -v $PWD:/app gp/yocto
+$ docker run -it -u 1000:1000 -v $PWD:/app gp/yocto
 ```
 
 ``MENDER_DATA_PART_SIZE_MB`` is the size of the **fixed** data partition,
